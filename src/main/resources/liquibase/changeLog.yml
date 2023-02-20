@@ -1,0 +1,5 @@
+databaseChangeLog:
+  - property:
+      name: common_schema
+  - includeAll:
+      path: liquibase/v01.*.*

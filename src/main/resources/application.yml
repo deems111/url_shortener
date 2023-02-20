@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: Shortener v.1
+
+  # Choose the appropriate database - PostgreSql / MySQL
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: root
+    #url: jdbc:mysql://localhost:3306/mysql
+    #username: root
+    #password: root
+
+  sql:
+    init:
+      mode: always
+
+  liquibase:
+    change-log: classpath:liquibase/changeLog.yml
+    enabled: true
+
+springdoc:
+  swagger-ui:
+    path=/swagger-ui.html
