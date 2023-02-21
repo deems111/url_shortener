@@ -6,7 +6,12 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-@Target({ElementType.METHOD, ElementType.ANNOTATION_TYPE})
+/**
+ * Log execution time of a method and log exception
+ */
+@Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface LogException {
+@LogExecutionTime
+@LogException
+public @interface LogAll {
 }

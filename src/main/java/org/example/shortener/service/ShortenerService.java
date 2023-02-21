@@ -1,5 +1,7 @@
 package org.example.shortener.service;
 
+import org.example.shortener.data.request.DisableRequest;
+import org.example.shortener.data.request.ModifyRequest;
 import org.example.shortener.data.request.ShortenerRequest;
 import org.example.shortener.data.dto.ShortUrlDto;
 
@@ -18,4 +20,9 @@ public interface ShortenerService {
 
     List<ShortUrlDto> findUrlAllByPeriod(Locale locale, LocalDateTime dateFrom, LocalDateTime dateTo);
 
+    void disableUrl(Locale locale, DisableRequest request);
+
+    Integer getCountOfUrlByUser(Locale locale, UUID userId, Boolean countDisabled);
+
+    ShortUrlDto modifyShortUrl(Locale locale, ModifyRequest request);
 }

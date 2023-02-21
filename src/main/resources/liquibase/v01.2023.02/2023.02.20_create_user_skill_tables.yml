@@ -24,7 +24,7 @@ databaseChangeLog:
                   constraints:
                     nullable: false
               - column:
-                  name: created_at
+                  name: created
                   type: timestamp
                   constraints:
                     nullable: false
@@ -57,7 +57,71 @@ databaseChangeLog:
                   constraints:
                     nullable: false
               - column:
-                  name: created_at
+                  name: disabled
+                  type: boolean
+                  constraints:
+                    nullable: false
+              - column:
+                  name: created
+                  type: timestamp
+                  constraints:
+                    nullable: false
+              - column:
+                  name: modified
+                  type: timestamp
+
+        - createTable:
+            tableName: test_shortener_event
+            columns:
+              - column:
+                  name: id
+                  type: varchar(64)
+                  constraints:
+                    primaryKey: true
+                    defaultValue: gen_random_uuid()
+                    nullable: false
+              - column:
+                  name: shortener_id
+                  type: varchar(64)
+                  constraints:
+                    foreignKeyName: fk_tb_shrtn_event_shrtn_id
+                    references: test_shortener(id)
+                    nullable: false
+              - column:
+                  name: type
+                  type: varchar(16)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: created
+                  type: timestamp
+                  constraints:
+                    nullable: false
+
+        - createTable:
+            tableName: test_click_tracking
+            columns:
+              - column:
+                  name: id
+                  type: varchar(64)
+                  constraints:
+                    primaryKey: true
+                    defaultValue: gen_random_uuid()
+                    nullable: false
+              - column:
+                  name: shortener_id
+                  type: varchar(64)
+                  constraints:
+                    foreignKeyName: fk_tb_click_shrtnr_id
+                    references: test_shortener(id)
+                    nullable: false
+              - column:
+                  name: ip
+                  type: varchar(16)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: created
                   type: timestamp
                   constraints:
                     nullable: false

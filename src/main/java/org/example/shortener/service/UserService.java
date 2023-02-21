@@ -3,6 +3,7 @@ package org.example.shortener.service;
 import org.example.shortener.data.request.UserAddRequest;
 import org.example.shortener.data.dto.UserDto;
 
+import java.util.List;
 import java.util.Locale;
 import java.util.UUID;
 
@@ -12,4 +13,5 @@ public interface UserService {
 
     UserDto getUser(Locale locale, UUID userId);
 
+    List<String> getUserEmails(Locale locale, int pageNum, int pageSize);
 }

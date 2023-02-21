@@ -13,6 +13,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.List;
 import java.util.Locale;
 import java.util.UUID;
 
@@ -40,12 +41,24 @@ public class UserController {
     @ResponseStatus(HttpStatus.OK)
     @Operation(summary = "Get User", description = "Returns user data by User UUID")
     @ApiResponses(value = {
-            @ApiResponse(responseCode = "201", description = "Successfully saved in DB"),
+            @ApiResponse(responseCode = "200", description = "Successfully returned"),
             @ApiResponse(responseCode = "404", description = "Not found - The user was not found")
     })
     public WebResponse<UserDto> getUser(@RequestHeader(name = "Accept-Language", required = false) String localeStr,
                                         @RequestParam UUID userId) {
         return new WebResponse<>(userService.getUser(new Locale(localeStr), userId));
+    }
+
+    @GetMapping("getEmails")
+    @ResponseStatus(HttpStatus.OK)
+    @Operation(summary = "Get User Emails", description = "Returns user emails using pages")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Successfully saved in DB"),
+            @ApiResponse(responseCode = "404", description = "Not found - The user was not found")
+    })
+    public WebResponse<List<String>> getUserEmails(@RequestHeader(name = "Accept-Language", required = false) String localeStr,
+                                                   @RequestParam int pageNum, @RequestParam int pageSize) {
+        return new WebResponse<>(userService.getUserEmails(new Locale(localeStr), pageNum, pageSize));
     }
 
 }
