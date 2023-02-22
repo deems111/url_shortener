@@ -4,70 +4,59 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b1cef9c-fe72-44f0-bbda-e5abb396f65c" name="Changes" comment="Application created using SpringBoot, AOP, Liquibase and  PostgreSQL.&#10;Added .dockerfile and docker-compose.yml">
-      <change afterPath="$PROJECT_DIR$/.dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysql.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/postgres.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/aop/LoggingAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/aop/MethodExecutionTimeAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/aop/annotation/LogException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/aop/annotation/LogExecutionTime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/config/InternationalizationConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/controller/ShortenerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/controller/advice/AdviceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/data/dto/ShortUrlDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/data/dto/ShortenerDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/data/dto/UserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/data/dto/WebResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/data/entity/Shortener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/data/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/data/entity/basic/BasicEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/data/request/ShortenerRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/data/request/UserAddRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/data/request/UserRegistrationRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/exception/DuplicateException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/exception/NotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/mapper/ShortenerMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/repository/ShortenerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/service/CrcService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/service/CrcServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/service/ShortenerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/service/impl/ShortenerServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/liquibase/changeLog.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/liquibase/v01.2023.02/2023.02.20_create_user_skill_tables.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/messages.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/messages_ge.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/shortener/ApplicationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/shortener/mapper/ShortenerMapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/shortener/mapper/UserMapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/shortener/service/CrcServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/shortener/service/ShortenerServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/shortener/service/UserControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/shortener/service/UserServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/shortener/service/util/Utility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/insert.sql" afterDir="false" />
+    <list default="true" id="4b1cef9c-fe72-44f0-bbda-e5abb396f65c" name="Changes" comment="Added Click Tracking and Modify Shortener Events">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/aop/annotation/LogAll.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/controller/ClickTrackingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/controller/ShortenerEventController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/data/dto/ClickTrackingDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/data/dto/ShortenerEventDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/data/entity/ClickTracking.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/data/entity/ShortenerEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/data/entity/basic/ModifiedEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/data/request/DisableRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/data/request/ModifyRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/enums/EventType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/enums/Sorting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/event/ShortenerModifyEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/event/listener/ShortenerEventListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/event/publisher/ShortenerEventPublisher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/mapper/ClickTrackingMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/mapper/ShortenerEventMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/repository/ClickTrackingRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/repository/ShortenerEventRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/service/ClickTrackingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/service/ShortenerEventService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/service/impl/ClickTrackingServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/service/impl/ShortenerEventServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/util/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/shortener/service/ShortenerPublisherTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/shortener/aop/annotation/LogException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/aop/annotation/LogException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/shortener/aop/annotation/LogExecutionTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/aop/annotation/LogExecutionTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/shortener/controller/ShortenerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/controller/ShortenerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/shortener/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/shortener/controller/advice/AdviceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/controller/advice/AdviceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/shortener/data/dto/ShortUrlDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/data/dto/ShortUrlDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/shortener/data/dto/ShortenerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/data/dto/ShortenerDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/shortener/data/entity/Shortener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/data/entity/Shortener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/shortener/data/entity/basic/BasicEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/data/entity/basic/BasicEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/shortener/data/request/ShortenerRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/data/request/ShortenerRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/shortener/data/request/UserAddRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/data/request/UserAddRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/shortener/data/request/UserRegistrationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/data/request/UserRegistrationRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/shortener/repository/ShortenerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/repository/ShortenerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/shortener/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/shortener/service/ShortenerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/service/ShortenerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/shortener/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/shortener/service/impl/ShortenerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/service/impl/ShortenerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/shortener/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/shortener/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/liquibase/v01.2023.02/2023.02.20_create_user_skill_tables.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/liquibase/v01.2023.02/2023.02.20_create_user_skill_tables.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messages.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/messages_ge.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messages_ge.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/shortener/service/util/Utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/shortener/service/util/Utility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/insert.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/insert.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,14 +66,19 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="AnnotationType" />
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
@@ -107,32 +101,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/DSaleev/IdeaProjects/shortener&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;b6397b68c677f41e0231213a53cb6fd4&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/DSaleev/IdeaProjects/shortener",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
+    "spring.configuration.checksum": "b6397b68c677f41e0231213a53cb6fd4",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql",
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.example.shortener.data.dto" />
@@ -158,10 +152,10 @@
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.example.shortener.service" />
-      <recent name="org.example.shortener.mapper" />
-      <recent name="org.example.shortener.exception" />
-      <recent name="org.example.shortener.aop" />
+      <recent name="org.example.shortener.data.entity.basic" />
       <recent name="org.example.shortener.data.dto" />
+      <recent name="org.example.shortener.data.request" />
+      <recent name="org.example.shortener.enums" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -172,6 +166,51 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.App (1)">
+    <configuration name="ShortenerMapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shortener" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.shortener.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.shortener.mapper" />
+      <option name="MAIN_CLASS_NAME" value="org.example.shortener.mapper.ShortenerMapperTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShortenerPublisherTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shortener" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.shortener.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.shortener.service" />
+      <option name="MAIN_CLASS_NAME" value="org.example.shortener.service.ShortenerPublisherTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShortenerServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shortener" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.shortener.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.shortener.service" />
+      <option name="MAIN_CLASS_NAME" value="org.example.shortener.service.ShortenerServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="App (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="shortener" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.shortener.App" />
@@ -204,40 +243,6 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="docker-compose.yml.application: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="application" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="docker-compose.yml.mysqldb: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="mysqldb" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <configuration name="docker-compose.yml.postgresdb: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
@@ -254,10 +259,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.App (1)" />
+        <item itemvalue="JUnit.ShortenerPublisherTest" />
+        <item itemvalue="JUnit.ShortenerServiceTest" />
+        <item itemvalue="JUnit.ShortenerMapperTest" />
         <item itemvalue="Docker.docker-compose.yml.postgresdb: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.mysqldb: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.application: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -284,8 +289,20 @@
       <workItem from="1676886289608" duration="10227000" />
       <workItem from="1676899041132" duration="96000" />
       <workItem from="1676908239430" duration="166000" />
-      <workItem from="1676924897901" duration="1418000" />
+      <workItem from="1676924897901" duration="2260000" />
+      <workItem from="1676930176486" duration="84000" />
+      <workItem from="1676930369826" duration="48000" />
+      <workItem from="1676931161426" duration="2450000" />
+      <workItem from="1676966586357" duration="24023000" />
     </task>
+    <task id="LOCAL-00001" summary="Application created using SpringBoot, AOP, Swagger, Liquibase and  PostgreSQL.&#10;Added .dockerfile and docker-compose.yml">
+      <created>1676929608522</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1676929608522</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,6 +313,19 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Application created using SpringBoot, AOP, Liquibase and  PostgreSQL.&#10;Added .dockerfile and docker-compose.yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Application created using SpringBoot, AOP, Liquibase and  PostgreSQL.&#10;Added .dockerfile and docker-compose.yml" />
+    <MESSAGE value="Application created using SpringBoot, AOP, Swagger, Liquibase and  PostgreSQL.&#10;Added .dockerfile and docker-compose.yml" />
+    <MESSAGE value="Added Click Tracking and Modify Shortener Events" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Click Tracking and Modify Shortener Events" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/shortener/service/ShortenerServiceTest.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

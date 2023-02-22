@@ -17,4 +17,6 @@ public interface Utility {
 
     UUID DEFAULT_UNIQUE_USER_UUID = UUID.fromString("8c9438ab-0f45-4de6-b1c1-e33ada3e6577");
 
+    UUID DEFAULT_SHORTENER_ID = UUID.fromString("e592ad12-a48f-444e-9318-75f75e51601f");
+
 }

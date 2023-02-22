@@ -1,24 +1,21 @@
 package org.example.shortener.data.request;
 
 import lombok.Data;
-import org.hibernate.validator.constraints.URL;
 
-import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.util.UUID;
 
 @Data
-public class ShortenerRequest {
+public class ModifyRequest {
 
     @NotNull(message = "User Id is mandatory")
     private UUID userId;
 
-    @NotBlank(message = "Url is mandatory")
-    @URL(message = "Not a url")
-    private String url;
+    @NotNull(message = "Shortener Id is mandatory")
+    private UUID shortenerId;
 
-    @Size(max = 8)
+    @Size(min = 3, max = 7, message = "Short URL should contain 3-7 symbols")
     private String shortUrl;
 
 }

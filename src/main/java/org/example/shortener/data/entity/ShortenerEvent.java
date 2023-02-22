@@ -3,7 +3,8 @@ package org.example.shortener.data.entity;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.example.shortener.data.entity.basic.ModifiedEntity;
+import org.example.shortener.data.entity.basic.BasicEntity;
+import org.example.shortener.enums.EventType;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Type;
 
@@ -13,9 +14,9 @@ import java.util.UUID;
 @Entity
 @Getter
 @Setter
-@Table(name = "test_shortener")
+@Table(name = "test_shortener_event")
 @NoArgsConstructor
-public class Shortener extends ModifiedEntity {
+public class ShortenerEvent extends BasicEntity {
 
     @Id
     @GeneratedValue(generator = "UUID")
@@ -26,21 +27,11 @@ public class Shortener extends ModifiedEntity {
     @Type(type = "uuid-char")
     private UUID id;
 
-    private String shortUrl;
-
     @Column(nullable = false)
-    private String url;
+    private EventType type;
 
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    @JoinColumn(name = "user_id", referencedColumnName = "id")
-    private User user;
+    @JoinColumn(name = "shortener_id", referencedColumnName = "id")
+    private Shortener shortener;
 
-    @Column(nullable = false)
-    private Boolean disabled = false;
-
-    public Shortener(String shortUrl, String url, User user) {
-        this.shortUrl = shortUrl;
-        this.url = url;
-        this.user = user;
-    }
 }

@@ -3,7 +3,7 @@ package org.example.shortener.data.entity;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.example.shortener.data.entity.basic.ModifiedEntity;
+import org.example.shortener.data.entity.basic.BasicEntity;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Type;
 
@@ -13,9 +13,9 @@ import java.util.UUID;
 @Entity
 @Getter
 @Setter
-@Table(name = "test_shortener")
+@Table(name = "test_click_tracking")
 @NoArgsConstructor
-public class Shortener extends ModifiedEntity {
+public class ClickTracking extends BasicEntity {
 
     @Id
     @GeneratedValue(generator = "UUID")
@@ -26,21 +26,11 @@ public class Shortener extends ModifiedEntity {
     @Type(type = "uuid-char")
     private UUID id;
 
-    private String shortUrl;
+    @Column(nullable = false)
+    @Type(type = "uuid-char")
+    private UUID shortenerId;
 
     @Column(nullable = false)
-    private String url;
+    private String ip;
 
-    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    @JoinColumn(name = "user_id", referencedColumnName = "id")
-    private User user;
-
-    @Column(nullable = false)
-    private Boolean disabled = false;
-
-    public Shortener(String shortUrl, String url, User user) {
-        this.shortUrl = shortUrl;
-        this.url = url;
-        this.user = user;
-    }
 }
